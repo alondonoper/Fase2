@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>css style</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+@font-face {
+  font-family: "angsa";
+  src: url("fonts/angsa new.ttf");
+}
+
+@font-face {
+  font-family: "franklin";
+  src: url("fonts/franklin gothic book.ttf"),
+        url("fonts/franklin gothic heavy.ttf");
+}
+<style>
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: angsa, franklin;
+}
+
+body {
+
+    background: #B3B3B3;
+    font-family:  Arial, Helvetica;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#lunad{
+
+    float: right;
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+
+}
+
+
+h1{
+	color: #FBF5EF;
+    text-align: center;
+    line-height: 130px;
+    margin: 0;
+}
+
+
+header{
+    background-repeat:no-repeat; 
+    background:#005883;
+    padding:1% 0%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+nav{
+	background: #0A2A1B;
+	height: 60px;
+	margin: 0;
+
+	margin-top: -1.2%;
+}
+
+nav li{
+	list-style: none;
+	display: inline-block;
+	padding: 20px 0px;
+}
+
+nav a{
+	color: #FFFFFF;
+	font-size:  18px;
+	font-weight: bold;
+	font-family: arial;
+	text-decoration: none;
+	padding: 20px;
+
+}
+nav a:hover{
+	background: #CCCCCC;
+	color: #000000;
+
+}
+
+ aside{
+        margin-left: 5%;
+        float: left;
+        width: 20%;
+        height: 550px;
+        margin-bottom: 5px; 
+        background: #f2f2f2;
+        
+    }
+.izquierdo ul{
+    list-style: none;
+}
+
+.lista > li{
+    position: relative;
+    display:inline-block;
+}
+
+.lista > li> a{
+    display: block;
+    padding: 15px 20px;
+    color: #000000;
+    text-decoration: none; 
+}
+
+.lista li a: hover {
+color: #E2A9F3;
+transition: all 1s;
+}
+
+.submenu{
+    position: absolute;
+    background: 333333;
+}
+
+.submenu li a{
+    display: block;
+    padding: 15px;
+    color: #FFFFFF;
+    
+}

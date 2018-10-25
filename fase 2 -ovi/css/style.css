@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>css style</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+@font-face {
+  font-family: "angsa";
+  src: url("fonts/angsa new.ttf");
+}
+
+@font-face {
+  font-family: "franklin";
+  src: url("fonts/franklin gothic book.ttf"),
+        url("fonts/franklin gothic heavy.ttf");
+}
+<style>
+
+
+*{
+        font-family: angsa, franklin;
+}
+
+body {
+
+    background: #B3B3B3;
+    font-family:  Arial, Helvetica;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#lunad{
+
+    float: right;
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+
+}
+
+
+h1{
+	color: #FBF5EF;
+    text-align: center;
+    line-height: 130px;
+    margin: 0;
+}
+
+
+header{
+    background-repeat:no-repeat; 
+    background:#005883;
+    padding:1% 0%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+nav{
+	background: #0A2A1B;
+	height: 60px;
+	margin: 0;
+
+	margin-top: -1.2%;
+}
+
+nav li{
+	list-style: none;
+	display: inline-block;
+	padding: 20px 0px;
+}
+
+nav a{
+	color: #FFFFFF;
+	font-size:  18px;
+	font-weight: bold;
+	font-family: arial;
+	text-decoration: none;
+	padding: 20px;
+
+}
+nav a:hover{
+	background: #CCCCCC;
+	color: #000000;
+
+}
+#imagenes{
+	background: #005883;
+}
+
+#section.contenedor{
+  position: absolute;
+  margin:10px;
+  height:355px;
+  width: 938px;
+  left: 24.5%;
+  top:15%;
+}
+
+.content-all {
+ 	width: 600px;
+ 	margin-left: 30%;
+ 	perspective: 1000px;
+  
+ }
+
+.content-carrousel:hover{
+ animation-play-state: paused;
+ cursor: pointer;
+ }
+
+ .content-carrousel{
+ 	width: 60%;
+ 	position: absolute;
+ 	animation: rotar 10s infinite linear; 
+
+ 	transform-style: preserve-3d;
+ }
+
+.content-carrousel figure{
+ 	width: 100%;
+ 	height:100%;
+ 	position: absolute;
+ }
+
+ .content-carrousel figure:nth-child(1){transform: rotateY(0deg)
+ 	translateZ(300px);}
+
+.content-carrousel figure:nth-child(2){transform: rotateY(72deg)
+ 	translateZ(300px);}
+
+.content-carrousel figure:nth-child(3){transform: rotateY(144deg)
+ 	translateZ(300px);}
+
+.content-carrousel figure:nth-child(4){transform: rotateY(216deg)
+ 	translateZ(300px);}
+
+.content-carrousel figure:nth-child(5){transform: rotateY(288deg)
+ 	translateZ(300px);}
+
+.content-carrousel figure:nth-child(6){transform: rotateY(360deg)
+ 	translateZ(300px);}
+
+
+ .content-carrousel img{
+ 	width: 100%;  	
+ }
+
+ h4{
+ 	color: #FBF5EF;
+ }
+
+.contenedor p {
+	margin-bottom: 5px;
+	margin-top: 5px;
+	font-family: arial;
+}
+
+#imagenes{
+	background: #005883;
+    margin: auto; 
+	margin-top: 2.5px;
+	border: 5px solid #616A6B;
+}
+
+#contenidos{
+	float: left;
+	width: 770px;
+	height: 428px;
+	background: #005883;
+    border: 5px solid #616A6B;
+    overflow:  hidden;
+    margin-top: 320px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.informacion h2{
+	text-align: center;
+}
+
+.informacion h2,h3,h5{
+	color: #FBF5EF;
+}
+
+aside{
+	 float: right; 
+	 width: 300px;
+	 background:  #005883;
+	 margin-top: 320px;
+	 border: 5px solid #616A6B;
+	 border-radius: 10px;
+}
+
+aside h2{
+	font-size: 20px;
+	color: #FFFFFF;
+	background:  #005883;
+	border: 5px solid #616A6B;
+	border-radius: 4px;
+	text-align: center;
+	padding: 10px;
+	font-family: arial; 
+}
+
+footer{
+	height: 50px;
+	background: #005883;
+	margin-top: 763px;
+	border: 5px solid #616A6B;
+}
+
+footer p{
+	color: white;
+	font-size: 15px;
+	font-family: arial;
+	text-align: center;
+	line-height: 30px;
+
+}
+
+@keyframes rotar{
+	from {
+		transform: rotateY(0deg);
+	}to{
+		transform: rotateY(360deg);
+}
