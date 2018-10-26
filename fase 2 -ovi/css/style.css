@@ -65,27 +65,50 @@ nav{
 	margin-top: -1.2%;
 }
 
-nav li{
+ul,ol{
 	list-style: none;
-	display: inline-block;
-	padding: 20px 0px;
 }
 
-nav a{
+.nav li a{
+	background-color: #0A2A1B;
 	color: #FFFFFF;
 	font-size:  18px;
 	font-weight: bold;
 	font-family: arial;
 	text-decoration: none;
-	padding: 20px;
-
+	padding: 20px; 
+	display: block;
 }
-nav a:hover{
+
+.nav li a:hover{
 	background: #CCCCCC;
 	color: #000000;
-
 }
-#imagenes{
+
+.nav > li{
+	float:left;
+}
+
+.nav li ul{
+	display: none;
+	position: absolute;
+	min-width: 140px;
+}
+
+.nav li:hover > ul{
+	display: block;
+}
+
+.nav li ul li{
+	position: relative;
+}
+
+.nav li ul li ul{
+	right: -140px;
+	top: 0px;
+}
+
+#inicio{
 	background: #005883;
 }
 
@@ -98,54 +121,13 @@ nav a:hover{
   top:15%;
 }
 
-.content-all {
- 	width: 600px;
- 	margin-left: 30%;
- 	perspective: 1000px;
-  
- }
+#imagen{
+	margin: auto;
+	border: 5px solid #616A6B;
+	margin-top: 2px;
+	background: #005883
+}
 
-.content-carrousel:hover{
- animation-play-state: paused;
- cursor: pointer;
- }
-
- .content-carrousel{
- 	width: 60%;
- 	position: absolute;
- 	animation: rotar 10s infinite linear; 
-
- 	transform-style: preserve-3d;
- }
-
-.content-carrousel figure{
- 	width: 100%;
- 	height:100%;
- 	position: absolute;
- }
-
- .content-carrousel figure:nth-child(1){transform: rotateY(0deg)
- 	translateZ(300px);}
-
-.content-carrousel figure:nth-child(2){transform: rotateY(72deg)
- 	translateZ(300px);}
-
-.content-carrousel figure:nth-child(3){transform: rotateY(144deg)
- 	translateZ(300px);}
-
-.content-carrousel figure:nth-child(4){transform: rotateY(216deg)
- 	translateZ(300px);}
-
-.content-carrousel figure:nth-child(5){transform: rotateY(288deg)
- 	translateZ(300px);}
-
-.content-carrousel figure:nth-child(6){transform: rotateY(360deg)
- 	translateZ(300px);}
-
-
- .content-carrousel img{
- 	width: 100%;  	
- }
 
  h4{
  	color: #FBF5EF;
@@ -157,7 +139,7 @@ nav a:hover{
 	font-family: arial;
 }
 
-#imagenes{
+#inicio{
 	background: #005883;
     margin: auto; 
 	margin-top: 2.5px;
@@ -166,12 +148,12 @@ nav a:hover{
 
 #contenidos{
 	float: left;
-	width: 770px;
-	height: 428px;
+	width: 884px;
+	height: 431px;
 	background: #005883;
     border: 5px solid #616A6B;
     overflow:  hidden;
-    margin-top: 320px;
+    margin-top: 2.5px;
 	margin-right: 10px;
 	margin-bottom: 10px;
 }
@@ -188,7 +170,7 @@ aside{
 	 float: right; 
 	 width: 300px;
 	 background:  #005883;
-	 margin-top: 320px;
+	 margin-top: 2.5px;
 	 border: 5px solid #616A6B;
 	 border-radius: 10px;
 }
@@ -207,7 +189,7 @@ aside h2{
 footer{
 	height: 50px;
 	background: #005883;
-	margin-top: 763px;
+	margin-top: 446px;
 	border: 5px solid #616A6B;
 }
 
@@ -220,9 +202,3 @@ footer p{
 
 }
 
-@keyframes rotar{
-	from {
-		transform: rotateY(0deg);
-	}to{
-		transform: rotateY(360deg);
-}
